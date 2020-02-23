@@ -59,6 +59,7 @@ function stateUpdate(newGameState){
             letterButton.disabled=gameState.selectedLetters.includes(letter);
 
         letterButton.addEventListener('click', () => {
+          'abcdef'.includes('a');
             stateUpdate( {
                 selectedLetters: gameState.selectedLetters.concat([letter]),
             });
